@@ -1,0 +1,132 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 48rem;
+  margin: 0 auto;
+  font: 1rem/1.5 system-ui, sans-serif;
+  color: #24262c;
+  background: #f5f3ef;
+}
+
+header {
+  padding: 1rem;
+  background: #dce9e4;
+}
+
+a {
+  color: #145a4b;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1, h2, h3, p {
+  margin: 0 0 0.4rem;
+}
+
+h1 {
+  font-size: 1.65rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+article, .cesta li, #resumen + dl {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+article, .cesta li, main section {
+  margin-bottom: 0.75rem;
+}
+
+button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #145a4b;
+  border-radius: 0.35rem;
+  color: #145a4b;
+  background: white;
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #934309;
+  outline-offset: 2px;
+}
+
+nav ul, .cesta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background: #dce9e4;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.6rem 0.35rem;
+}
+
+[aria-current="page"] {
+  font-weight: 700;
+  text-decoration-thickness: 0.15em;
+}
+
+.cesta li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr auto;
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.portada {
+  min-height: 5rem;
+  padding: 0.35rem;
+  background: #24483f;
+  color: white;
+  font: bold 0.64rem/1.2 Georgia, serif;
+}
+
+.cesta li:nth-child(2) .portada {
+  background: #593e52;
+}
+
+.cantidad {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.precio, .total {
+  font-weight: 700;
+}
+
+.precio {
+  white-space: nowrap;
+}
+
+dl div {
+  display: flex;
+  justify-content: space-between;
+}
+
+dd {
+  margin: 0;
+}

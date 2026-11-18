@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi cesta | La Trastienda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Mi cesta</h1>
+    <p>2 artículos</p>
+  </header>
+
+  <main>
+    <ul class="cesta" aria-label="Artículos de la cesta">
+      <li>
+        <span class="portada" aria-hidden="true">La paciente silenciosa</span>
+        <div>
+          <h2>La paciente silenciosa</h2>
+          <p>Alex Michaelides · Tapa dura</p>
+          <div class="cantidad" role="group" aria-label="Cantidad de La paciente silenciosa">
+            <button type="button" aria-label="Quitar una unidad de La paciente silenciosa">−</button>
+            <span>1</span>
+            <button type="button" aria-label="Añadir una unidad de La paciente silenciosa">+</button>
+          </div>
+        </div>
+        <p class="precio">19,90 €</p>
+      </li>
+      <li>
+        <span class="portada" aria-hidden="true">El silencio de la ciudad blanca</span>
+        <div>
+          <h2>El silencio de la ciudad blanca</h2>
+          <p>Eva García Sáenz de Urturi · Ebook</p>
+          <div class="cantidad" role="group" aria-label="Cantidad de El silencio de la ciudad blanca">
+            <button type="button" aria-label="Quitar una unidad de El silencio de la ciudad blanca">−</button>
+            <span>1</span>
+            <button type="button" aria-label="Añadir una unidad de El silencio de la ciudad blanca">+</button>
+          </div>
+        </div>
+        <p class="precio">9,99 €</p>
+      </li>
+    </ul>
+
+    <section aria-labelledby="resumen">
+      <h2 id="resumen">Resumen</h2>
+      <dl>
+        <div><dt>Subtotal</dt><dd>29,89 €</dd></div>
+        <div><dt>Envío</dt><dd>Gratis</dd></div>
+        <div class="total"><dt>Total</dt><dd>29,89 €</dd></div>
+      </dl>
+      <button type="button">Tramitar pedido</button>
+    </section>
+  </main>
+
+  <nav aria-label="Secciones de la app">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="carrito.html" aria-current="page">Cesta</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
